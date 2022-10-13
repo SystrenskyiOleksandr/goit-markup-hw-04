@@ -7,7 +7,7 @@
     --second-background-color: #F5F4FA;
     --contact-color: rgba(255, 255, 255, 0.6);
     --color-logo: #000000;
-    --background-color-hero: #2F303A;
+    --background-color-footer: #2F303A;
     --button-main-hover: #188CE8;
     --border-color: #ECECEC;
     --second-border-color: #EEEEEE;
@@ -145,10 +145,7 @@ ul {
 
 /* main */
 
-.hero,
-.footer {
-    background-color: var(--background-color-hero);
-}
+
 
 .hero {
     text-align: center;
@@ -158,14 +155,13 @@ ul {
 
 .overlay {
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
-    margin-right: auto;
-    outline: 1px solid var(--overlay-background-color);
+    margin-right: auto;    
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Teamoverlay.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;    
+    background-size: cover;
+    background-color: var(--overlay-background-color)
 }
 
 .title {
@@ -323,17 +319,13 @@ ul {
 }
 
 .link-social:hover,
-.link-social:focus {    
-    background-color: var(--accent-color);
-}
-
-.social-icon:hover,
-.social-icon:focus {
-    fill: var(--background-color);
+.link-social:focus {
+    color: var(--background-color);
+    background-color: var(--accent-color);    
 }
 
 .social-icon {
-    fill: var(--color-social);
+    fill: currentColor;
 }
 
 
@@ -381,6 +373,9 @@ ul {
     cursor: pointer;
     color: var(--background-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* footer */
@@ -388,6 +383,7 @@ ul {
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: var(--background-color-footer);
 }
 
 .place {
@@ -475,9 +471,9 @@ ul {
 
 .border {
     padding: 20px 24px;
-    border-left: 1px solid var(--second-border-color);
-    border-right: 1px solid var(--second-border-color);
-    border-bottom: 1px solid var(--second-border-color);
+    border-left: 1px solid var(--color-social);
+    border-right: 1px solid var(--color-social);
+    border-bottom: 1px solid var(--color-social);
 }
 .title-photo {
     color: var(--title-text-color);
