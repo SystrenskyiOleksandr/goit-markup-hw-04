@@ -323,17 +323,21 @@ ul {
 }
 
 .link-social:hover,
-.link-social:focus {
-    color: var(--background-color);
+.link-social:focus {    
     background-color: var(--accent-color);
 }
 
+.social-icon:hover,
+.social-icon:focus {
+    fill: var(--background-color);
+}
+
 .social-icon {
-    fill: currentColor;
+    fill: var(--color-social);
 }
 
 
-/* button */
+/* button */    
 
 .button {
     text-align: center;    
@@ -447,7 +451,7 @@ ul {
 }
 
 .link-social-footer {
-    color: var(--background-color);
+    fill: var(--background-color);
     background-color: #FFFFFF1A;
 }
 
@@ -590,6 +594,8 @@ ul {
     fill: var(--color-social);
 }
 
-
-
-
+.link-client:hover,
+.link-client:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+}
